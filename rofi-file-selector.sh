@@ -4,3 +4,5 @@ open=$((find ~/Dropbox -type f; find ~/Cases -type f; find ~/Desktop -type f; fi
 echo "${open/// \n}" | while read -r file; do xdg-open-log.sh "$file" & done
 #echo "${open/// \n}" | while read -r file; do xdg-open "$file"; done#!/bin/bash
 
+
+
