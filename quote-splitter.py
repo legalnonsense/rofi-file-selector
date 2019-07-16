@@ -18,6 +18,10 @@ for s in strings[1:]:
         if (s.strip() != ''):
             file_names.append(s)
 
+if last_query:            
+    with open("/home/jeff/Code/rofi-file-selector/rofi-file-selector.conf", "w") as f:
+        f.write(last_query + " ")
+                    
 # print(last_query)
 # print (file_names)
 
