@@ -2,10 +2,9 @@
 
 import re
 import sys
+from os.path import expanduser
 
 s=r''.join(sys.argv[1:])
-
-#s="'asdfa  ''23 23'"
 
 strings = s.split('\'')
 last_query = strings[1].strip()
@@ -19,11 +18,8 @@ for s in strings[1:]:
             file_names.append(s)
 
 if last_query:            
-    with open("/home/jeff/Code/rofi-file-selector/rofi-file-selector.conf", "w") as f:
+    with open(expanduser("~") + "/Code/rofi-file-selector/rofi-file-selector.conf", "w") as f:
         f.write(last_query + " ")
-                    
-# print(last_query)
-# print (file_names)
 
 for name in file_names:
     sys.stdout.write(name)
