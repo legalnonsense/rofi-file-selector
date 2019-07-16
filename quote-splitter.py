@@ -1,5 +1,11 @@
+#!/usr/bin/env python3
+
+
+#echo \"${open}\"|xargs python -u quote-splitter.py
+
 import re
 import sys
+
 
 s=r''.join(sys.argv[1:])
 
