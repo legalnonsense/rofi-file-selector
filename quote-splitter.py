@@ -2,20 +2,27 @@
 
 import re
 import sys
-import subprocess 
 
 s=r''.join(sys.argv[1:])
+
+#s="'asdfa  ''23 23'"
 
 strings = s.split('\'')
 last_query = strings[1].strip()
 file_names = []
 
-for s in strings:
+for s in strings[1:]:
     if (s==last_query) or (s.strip()==''):
         pass
     else:
         if (s.strip() != ''):
             file_names.append(s)
 
-print(last_query)
-print (file_names)
+# print(last_query)
+# print (file_names)
+
+for name in file_names:
+    sys.stdout.write(name)
+    sys.stdout.write("\n")
+
+
