@@ -2,3 +2,5 @@
 xdg-open-log.log
 rofi-file-selector.conf
 xdg-open-log.log
+*.log
+*.conf
