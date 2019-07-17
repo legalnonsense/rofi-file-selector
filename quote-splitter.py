@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 
-<<<<<<< HEAD
 
-#echo \"${open}\"|xargs python -u quote-splitter.py
-
-=======
->>>>>>> devel
 import re
 import sys
 from os.path import expanduser
