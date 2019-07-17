@@ -11,8 +11,6 @@ else
 fi
 
 
-#echo "${open/// \n}" | 
-
 
 
 
