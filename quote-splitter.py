@@ -11,7 +11,7 @@ last_query = strings[1].strip()
 file_names = []
 
 for s in strings[1:]:
-    if (s==last_query) or (s.strip()==''):
+    if (s.strip()==last_query) or (s.strip()==''):
         pass
     else:
         if (s.strip() != ''):
