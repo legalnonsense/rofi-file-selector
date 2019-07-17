@@ -7,10 +7,9 @@ open=$((find ~/Dropbox -type f; find ~/Cases -type f; find ~/Desktop -type f; fi
 if [ -z ${open+x} ]; then
     echo "open is unset"
 else
-    quote-splitter.py "$open" | while read -r file; do xdg-open-log.sh "$file" & done
+    quote-splitter.py "$open" | while read -r file;
+    do
+	grep -qxF "$file" ~/Code/rofi-file-selector/xdg-open-log.log || echo "$file" >> ~/Code/rofi-file-selector/xdg-open-log.log
+	xdg-open "$file" &
+    done
 fi
-
-
-
-
-
