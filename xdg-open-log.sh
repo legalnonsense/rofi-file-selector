@@ -5,7 +5,7 @@
 
 
 #echo to the file to the log
-grep -qxF "$@" ~/Code/xdg-open-log/xdg-open-log.log || echo "$@" >> ~/Code/xdg-open-log/xdg-open-log.log
+grep -qxF "$@" ~/Code/rofi-file-selector/xdg-open-log.log || echo "$@" >> ~/Code/rofi-file-selector/xdg-open-log.log
 #echo "$@" >> ~/Code/xdg-open-log/xdg-open-log.log
 #open the file
 xdg-open "$@"
