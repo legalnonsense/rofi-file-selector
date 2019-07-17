@@ -15,8 +15,7 @@ for s in strings[1:]:
     if (s.strip()==last_query) or (s.strip()==''):
         pass
     else:
-        if (s.strip() != ''):
-            file_names.append(s)
+        file_names.append(s)
 
 if last_query:            
     with open(expanduser("~") + "/Code/rofi-file-selector/rofi-file-selector.conf", "w") as f:
