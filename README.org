@@ -2,6 +2,8 @@
 
 Uses Rofi (https://github.com/davatorium/rofi) to search for files using the file’s full path and opens them with xdg-open. For the sake of speed, the search is limited to the directories listed in the find command in rofi-file-search.sh. 
 
+Open multiple files by selecting them with Shift+Return. 
+
 The script automatically saves previous search terms and re-opens rofi with the same search text. To delete the previous search terms, type C-a C-k. 
 
 Also logs files opened and enables access to recent files via rofi-recent-files.sh. 
