@@ -8,7 +8,7 @@ open=$((find ~/Dropbox -type f; find ~/Cases -type f; find ~/Desktop -type f; fi
 #open=$(locate home media | rofi -dmenu "$@" -l 50 -i -p "Open file" -multi-select -width 2500 -format Fq -filter "$(cat ~/Code/rofi-file-selector/rofi-file-selector.conf)")
 
 
-if [ -z ${open+x} ]; then
+if [ -z "$open" ]; then
     exit 1
 else
     quote-splitter.py "$open" | while read -r file;
