@@ -9,7 +9,7 @@ open=$((find ~/Dropbox -type f; find ~/Cases -type f; find ~/Desktop -type f; fi
 
 
 if [ -z ${open+x} ]; then
-    echo "open is unset"
+    exit 1
 else
     quote-splitter.py "$open" | while read -r file;
     do
