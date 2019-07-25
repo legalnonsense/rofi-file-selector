@@ -5,3 +5,5 @@ xdg-open-log.log
 *.log
 *.conf
 xdg-open-log.sh
+#*
+.#*
